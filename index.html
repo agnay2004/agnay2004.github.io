@@ -51,11 +51,45 @@
             line-height: 1.6;
         }
 
-        /* ===== CONTACT ===== */
-        .contact p {
-            margin: 8px 0;
+        /* ===== SKILLS ===== */
+        .skills-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 10px;
         }
 
+        .skill-badge {
+            padding: 10px 22px;
+            border: 1px solid #666;
+            border-radius: 999px;
+            font-size: 15px;
+            color: #f5f5f5;
+            background: transparent;
+            letter-spacing: 0.3px;
+            transition: all 0.3s ease;
+        }
+
+        .skill-badge:hover {
+            background: white;
+            color: black;
+        }
+
+        /* ===== CONTACT ===== */
+        .contact p {
+            margin: 10px 0;
+        }
+
+        .contact a {
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== FOOTER ===== */
         footer {
             text-align: center;
             padding: 20px;
@@ -72,7 +106,6 @@
         <img src="profile.jpg" alt="Agnay KS" class="profile-pic">
         <h1>Agnay K S</h1>
         <p>Data Science Student | ML Enthusiast</p>
-
     </header>
 
     <!-- ===== ABOUT ===== -->
@@ -80,80 +113,68 @@
         <h2>About Me</h2>
         <div class="card">
             <p>
-                 I am a Data Science student and Machine Learning enthusiast with a strong
-            interest in building data-driven solutions to real-world problems.
-            I enjoy working on data processing tasks such as data cleaning,
-            preprocessing, feature engineering, exploratory data analysis (EDA),
-            and developing predictive machine learning models for practical
-            applications.
+                I am a Data Science student and Machine Learning enthusiast with a strong
+                interest in building data-driven solutions to real-world problems.
+                I enjoy working on data processing tasks such as data cleaning,
+                preprocessing, feature engineering, exploratory data analysis (EDA),
+                and developing predictive machine learning models for practical
+                applications.
             </p>
         </div>
     </section>
+
+    <!-- ===== PROJECTS ===== -->
     <section>
-        <section>
-    <h2>Skills</h2>
+        <h2>Projects</h2>
+        <div class="card">
+            <h3>RL-Based 2D Dungeon Game</h3>
+            <p>
+                Developed a reinforcement learning based 2D dungeon exploration game
+                where an intelligent agent learns optimal navigation strategies using
+                reward-based learning in a simulated environment with obstacles and goals.
+            </p>
+            <p>
+                <strong>Tech Stack:</strong> Python, Reinforcement Learning, Q-Learning
+            </p>
+        </div>
+    </section>
 
-    <div class="skills-container">
-        <span class="skill-pill">Python</span>
-        <span class="skill-pill">EDA</span>
-        <span class="skill-pill">Big Data Analytics</span>
-        <span class="skill-pill">Machine Learning</span>
-        <span class="skill-pill">Deep Learning</span>
-    </div>
-</section>
-
-        
-    <h2>Projects</h2>
-
-    <div class="card">
-        <h3>RL-Based 2D Dungeon Game</h3>
-        <p>
-            Developed a reinforcement learning based 2D dungeon exploration game
-            where an intelligent agent learns optimal navigation strategies using
-            reward-based learning. The environment includes obstacles, goals, and
-            penalties, enabling the agent to improve performance through trial
-            and error.
-        </p>
-        <p>
-            <strong>Tech Stack:</strong> Python, Reinforcement Learning, Q-Learning,
-            Environment Simulation
-        </p>
-    </div>
-</section>
-
+    <!-- ===== SKILLS ===== -->
+    <section>
+        <h2>Skills</h2>
+        <div class="skills-wrapper">
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">Exploratory Data Analysis (EDA)</span>
+            <span class="skill-badge">Big Data Analytics</span>
+            <span class="skill-badge">Machine Learning</span>
+            <span class="skill-badge">Deep Learning</span>
+        </div>
+    </section>
 
     <!-- ===== CONTACT ===== -->
-<section class="contact">
-    <h2>Contact</h2>
-    <div class="card">
-        <p>
-            📧 Email:
-            <a href="mailto:agnayks08@gmail.com" style="color:#ccc;">
-                agnayks08@gmail.com
-            </a>
-        </p>
+    <section class="contact">
+        <h2>Contact</h2>
+        <div class="card">
+            <p>📧 Email:
+                <a href="mailto:agnayks08@gmail.com">agnayks08@gmail.com</a>
+            </p>
+            <p>🔗 LinkedIn:
+                <a href="https://www.linkedin.com/in/agnay-ks-9043383a5" target="_blank">
+                    linkedin.com/in/agnay-ks-9043383a5
+                </a>
+            </p>
+            <p>💻 GitHub:
+                <a href="https://github.com/agnay2004" target="_blank">
+                    github.com/agnay2004
+                </a>
+            </p>
+        </div>
+    </section>
 
-        <p>
-            🔗 LinkedIn:
-            <a href="https://www.linkedin.com/in/agnay-ks-9043383a5"
-               target="_blank"
-               style="color:#ccc;">
-                linkedin.com/in/agnay-ks-9043383a5
-            </a>
-        </p>
-
-        <p>
-            💻 GitHub:
-            <a href="https://github.com/agnay2004"
-               target="_blank"
-               style="color:#ccc;">
-                github.com/agnay2004
-            </a>
-        </p>
-    </div>
-</section>
-
-
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        © 2026 Agnay K S
+    </footer>
 
 </body>
 </html>
