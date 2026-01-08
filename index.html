@@ -2,80 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Agnay KS | Portfolio</title>
+    <title>Agnay K S | Portfolio</title>
+
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #f4f4f4;
-        }
-        header {
-            background: #222;
+            background: black;
             color: white;
-            padding: 40px;
-            text-align: center;
         }
+
+        /* ===== HEADER WITH PHOTO ===== */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            border-bottom: 1px solid #333;
+        }
+
+        .profile-pic {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+            margin-bottom: 15px;
+        }
+
+        /* ===== SECTIONS ===== */
         section {
-            padding: 30px;
             max-width: 900px;
             margin: auto;
+            padding: 40px 20px;
         }
-        .card {
-            background: white;
-            padding: 20px;
+
+        h2 {
+            font-size: 34px;
             margin-bottom: 20px;
-            border-radius: 6px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
+
+        .card {
+            border: 1px solid #444;
+            padding: 25px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .card p {
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        /* ===== CONTACT ===== */
+        .contact p {
+            margin: 8px 0;
+        }
+
         footer {
-            background: #222;
-            color: white;
             text-align: center;
-            padding: 15px;
+            padding: 20px;
+            border-top: 1px solid #333;
+            color: #aaa;
         }
     </style>
 </head>
+
 <body>
 
-<header>
-    <h1>Agnay K S</h1>
-    <p>Engineering Student | AI & ML Enthusiast</p>
-</header>
+    <!-- ===== HEADER ===== -->
+    <header class="hero">
+        <img src="profile.jpg" alt="Agnay KS" class="profile-pic">
+        <h1>Agnay K S</h1>
+        <p>Engineering Student | AI & ML Enthusiast</p>
+    </header>
 
-<section>
-    <div class="card">
+    <!-- ===== ABOUT ===== -->
+    <section>
         <h2>About Me</h2>
-        <p>
-            I am an engineering student interested in Artificial Intelligence,
-            Machine Learning, and Software Development.
-        </p>
-    </div>
+        <div class="card">
+            <p>
+                I am an engineering student passionate about Artificial Intelligence,
+                Machine Learning, and building intelligent systems. I enjoy working
+                on real-world data-driven problems.
+            </p>
+        </div>
+    </section>
 
-    <div class="card">
-        <h2>Projects</h2>
-        <ul>
-            <li>Smart Gas Leakage Alarm</li>
-            <li>Fire Detection System</li>
-            <li>Image Super Resolution using SRGAN</li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h2>Skills</h2>
-        <p>Python, Machine Learning, HTML, CSS, GitHub</p>
-    </div>
-
-    <div class="card">
+    <!-- ===== CONTACT ===== -->
+    <section class="contact">
         <h2>Contact</h2>
-        <p>Email: yourmail@gmail.com</p>
-        <p>GitHub: github.com/agnay2004</p>
-    </div>
-</section>
+        <div class="card">
+            <p>Email: yourmail@gmail.com</p>
+            <p>GitHub: github.com/agnay2004</p>
+            <p>LinkedIn: linkedin.com/in/yourprofile</p>
+        </div>
+    </section>
 
-<footer>
-    <p>© 2026 Agnay K S</p>
-</footer>
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        © 2026 Agnay K S
+    </footer>
 
 </body>
 </html>
-
