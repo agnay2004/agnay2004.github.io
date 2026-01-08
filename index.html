@@ -5,18 +5,27 @@
     <title>Agnay K S | Portfolio</title>
 
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: black;
-            color: white;
+        :root {
+            --bg-main: #0f172a;        /* Dark slate */
+            --bg-card: #111827;        /* Card background */
+            --text-main: #e5e7eb;      /* Light gray text */
+            --text-muted: #9ca3af;     /* Muted text */
+            --accent: #3b82f6;         /* Professional blue */
+            --border: #1f2933;
         }
 
-        /* ===== HEADER WITH PHOTO ===== */
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: var(--bg-main);
+            color: var(--text-main);
+        }
+
+        /* ===== HEADER ===== */
         .hero {
             text-align: center;
-            padding: 60px 20px;
-            border-bottom: 1px solid #333;
+            padding: 70px 20px;
+            border-bottom: 1px solid var(--border);
         }
 
         .profile-pic {
@@ -24,31 +33,44 @@
             height: 160px;
             border-radius: 50%;
             object-fit: cover;
-            border: 3px solid white;
-            margin-bottom: 15px;
+            border: 3px solid var(--accent);
+            margin-bottom: 18px;
+        }
+
+        .hero h1 {
+            margin-bottom: 8px;
+        }
+
+        .hero p {
+            color: var(--text-muted);
+            font-size: 17px;
         }
 
         /* ===== SECTIONS ===== */
         section {
             max-width: 900px;
             margin: auto;
-            padding: 40px 20px;
+            padding: 45px 20px;
         }
 
         h2 {
-            font-size: 34px;
-            margin-bottom: 20px;
+            font-size: 32px;
+            margin-bottom: 22px;
+            border-left: 4px solid var(--accent);
+            padding-left: 12px;
         }
 
+        /* ===== CARD ===== */
         .card {
-            border: 1px solid #444;
-            padding: 25px;
-            background: rgba(0, 0, 0, 0.6);
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 28px;
+            border-radius: 8px;
         }
 
         .card p {
-            color: #ccc;
-            line-height: 1.6;
+            color: var(--text-muted);
+            line-height: 1.7;
         }
 
         /* ===== SKILLS ===== */
@@ -61,18 +83,18 @@
 
         .skill-badge {
             padding: 10px 22px;
-            border: 1px solid #666;
+            border: 1px solid var(--border);
             border-radius: 999px;
             font-size: 15px;
-            color: #f5f5f5;
+            color: var(--text-main);
             background: transparent;
-            letter-spacing: 0.3px;
             transition: all 0.3s ease;
         }
 
         .skill-badge:hover {
-            background: white;
-            color: black;
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
         }
 
         /* ===== CONTACT ===== */
@@ -81,7 +103,7 @@
         }
 
         .contact a {
-            color: #ccc;
+            color: var(--accent);
             text-decoration: none;
         }
 
@@ -92,9 +114,10 @@
         /* ===== FOOTER ===== */
         footer {
             text-align: center;
-            padding: 20px;
-            border-top: 1px solid #333;
-            color: #aaa;
+            padding: 25px;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 14px;
         }
     </style>
 </head>
